@@ -2299,7 +2299,7 @@
 						}
 					}(),
 					be = function() {
-						console.log("油猴检测到：系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。");
+						console.log("油猴hook：系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。");
 						return;
 						var e, t, n = null === (e = st) || void 0 === e || null === (t = e.el()) || void 0 === t ? void 0 : t.querySelector("video");
 						n && !n.paused && U && n && n.playbackRate > U && (mt && mt.destroy(), mt = k.Z.warn({
@@ -2322,6 +2322,8 @@
 					}), 1e3))
 				}), [U, st]), (0, l.useEffect)((function() {
 					var e = function() {
+						console.log("油猴hook：visibilitychange");
+						return;
 						var e;
 						document.hidden && (null === (e = st) || void 0 === e || e.pause())
 					};
