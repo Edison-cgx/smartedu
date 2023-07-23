@@ -2299,8 +2299,8 @@
 						}
 					}(),
 					be = function() {
-                        console.log("系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。");
-                        return;
+						console.log("油猴检测到：系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。");
+						return;
 						var e, t, n = null === (e = st) || void 0 === e || null === (t = e.el()) || void 0 === t ? void 0 : t.querySelector("video");
 						n && !n.paused && U && n && n.playbackRate > U && (mt && mt.destroy(), mt = k.Z.warn({
 							content: "系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。",
