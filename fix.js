@@ -2330,6 +2330,8 @@
 						}
 					}(),
 					be = function() {
+						console.log("油猴hook：系统检测到倍速播放，已自动暂停学习，关闭倍速播放后可继续学习。");
+						return;
 						if (ft && !ft.paused()) {
 							var e = !1,
 								t = ft.currentTime(),
@@ -2356,6 +2358,8 @@
 					}), 1e3))
 				}), [U, ft]), (0, l.useEffect)((function() {
 					var e = function() {
+						console.log("油猴hook：visibilitychange");
+						return;
 						var e;
 						document.hidden && (null === (e = ft) || void 0 === e || e.pause())
 					};
